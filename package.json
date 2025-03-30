@@ -1,0 +1,26 @@
+{
+  "name": "@ipvr9/mcp-limitless-server",
+  "version": "0.1.0",
+  "description": "MCP Server for interacting with the Limitless API",
+  "license": "MIT",
+  "author": "Ryan Boyle (https://github.com/ipvr9/mcp-limitless-server)",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch --clear-screen=false src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.8.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
